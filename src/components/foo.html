@@ -1,0 +1,30 @@
+<ion-list>
+    <ion-card *ngIf="data.valor">
+    <ion-card-header>
+        Eres Mujer
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list>
+            <button ion-item>Bonita</button>
+            <button ion-item>Cabello Largo</button>
+            <button ion-item>Inteligente</button>
+        </ion-list>
+    </ion-card-content>
+</ion-card>
+
+
+<ion-card *ngIf="!data.valor">
+    <ion-card-header>
+        Eres Hombre
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list>
+            <button ion-item>Bigote</button>
+            <button ion-item>Barba</button>
+            <button ion-item>Feo</button>
+            <button ion-item>Fuerte</button>
+            <button ion-item>Formal</button>
+        </ion-list>
+    </ion-card-content>
+</ion-card>
+</ion-list>
